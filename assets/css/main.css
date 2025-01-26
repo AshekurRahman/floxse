@@ -1,0 +1,292 @@
+/* Table of Contents
+1. Imports
+2. Navbar
+3. Header
+4. Navigation Menu
+*/
+
+/* 1. Imports */
+@import url('./swiper-bundle-min.css');
+@import url('./reset.css');
+@import url('./root.css');
+@import url('./icons.css');
+@import url('./grids.css');
+
+/* 5. Buttons */
+.button {
+    display: inline-block;
+    background: var(--black-color);
+    padding: 15px 30px;
+    border-radius: 99px;
+    text-transform: capitalize;
+    transition: var(--transition-normal);
+    color: var(--light-color);
+    position: relative;
+    z-index: 1;
+}
+
+.button i {
+    margin-left: 8px;
+    transform: translate(0px, 0px) scale(1,1);
+    transition: var(--transition-normal);
+}
+
+.button:hover .corner__up {
+    transform: translate(5px, -5px);
+}
+
+.button:hover .right {
+    transform: translate(8px, 0px);
+}
+
+.button:hover .zoom {
+    transform: scale(1.1,1.1);
+}
+
+.button.primary {
+    background: var(--primary-gradient);
+}
+
+.button.secondary {
+    background: var(--secondary-color);
+    color: var(--black-color);
+}
+
+.toggle__button {
+    width: 57px;
+    height: 57px;
+    background: var(--primary-gradient);
+    border-radius: var(--round-sm);
+    color: var(--light-color);
+    transition: var(--transition-normal);
+    cursor: pointer;
+}
+
+.button.outline {
+    color: var(--black-color);
+}
+
+.button.primary.outline {
+    color: var(--primary-color);
+}
+
+.button.outline:before {
+    content: "";
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    background-color: var(--light-color);
+    border-radius: 99px;
+    z-index: -1;
+    transition: var(--transition-normal);
+}
+
+
+/* 1. Page Wrapper */
+.page__wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* 2. Navbar */
+.navbar__area {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: var(--z-index-dropdown);
+}
+
+.navbar__area .row {
+    min-height: 120px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar__area:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: var(--divider-gradient); /* Fixed the typo here */
+}
+
+.nav__logo .logo__light {
+    display: var(--light-element);
+}
+
+.nav__logo .logo__dark {
+    display: var(--dark-element);
+}
+
+.navbar__area .button {
+    padding: 8px 20px;
+    font-size: calc(var(--font-size-base) - 2px);
+}
+
+/* 3. Header */
+.header__area {
+    padding-top: 180px;
+    padding-bottom: 100px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    background-color: #101849;
+}
+
+.header__area img.element_1 {
+    position: absolute;
+    right: -5%;
+    bottom: 12%;
+    max-width: 6vw;
+}
+
+.header__area .row {
+    min-height: calc(60vh + 25px);
+}
+
+.header__area:after,
+.header__area:before {
+    content: "";
+    position: absolute;
+    left: -12vw;
+    bottom: 10vh;
+    width: 25vw;
+    height: 25vw;
+    border-radius: 20vw;
+    background: var(--primary-gradient);
+    filter: blur(10vw);
+    opacity: .9;
+    z-index: -1;
+}
+
+.header__area:before {
+    left: auto;
+    bottom: auto;
+    top: -10vw;
+    right: -10vw;
+}
+
+.header__area .sub__heading {
+    font-size: calc(var(--font-size-base) + 4px);
+    line-height: calc(var(--line-height-base) + 4px);
+}
+
+.header__area .header__actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.header__area .header__actions .clients {
+    display: inline-flex;
+}
+
+.header__area .header__actions .clients img {
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.header__area .header__actions .clients img:not(:first-child) {
+    margin-left: -15px;
+}
+
+.header__area .header__actions .counter {
+    line-height: 1.2em;
+    display: flex;
+}
+
+ul.trust__line {
+    display: flex;
+    align-items: center;
+    color: var(--light-color);
+    margin-bottom: var(--spacing-lg);
+}
+
+ul.trust__line li {
+    margin-right: var(--spacing-xs);
+    display: inline-block;
+    min-width: 4px;
+}
+
+ul.trust__line img.fill {
+    padding: 2px;
+    background-color: #219653;
+}
+
+ul.trust__line img {
+    width: 20px;
+}
+/* 4. Navigation Menu */
+nav.nav__menu .nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: var(--spacing-md) 0px;
+}
+
+nav.nav__menu .nav__list li {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+nav.nav__menu .nav__list li a {
+    font-weight: var(--fw-medium);
+    display: inline-block;
+}
+
+nav.nav__menu .nav__list li span.arrow {
+    margin-left: var(--spacing-sm);
+}
+
+nav.nav__menu .nav__list>li {
+    padding: var(--spacing-md) var(--spacing-xl);
+}
+
+nav.nav__menu .nav__list > li > span,
+nav.nav__menu .nav__list > li > a {
+    color: var(--light-color);
+    transition: var(--transition-normal);
+}
+nav.nav__menu .nav__list li:hover > span,
+nav.nav__menu .nav__list li:hover > a {
+    color: var(--primary-color);
+}
+
+
+/* 0. Services */
+.service__slider .swiper-wrapper {
+    transition-timing-function: linear; /* Use linear timing function */
+}
+
+.service__slider {
+    background-color: var(--primary-color-75);
+    color: var(--light-color);
+}
+
+.service__slider .slide__text {
+    height: calc(var(--spacing-xl) * 5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(var(--font-size-base) * 1.8);
+    font-weight: var(--fw-medium);
+    text-align: center;
+    width: 100%;
+}
+
+.service__slider .slide__text::before {
+    content: url(../images/start.png);
+    position: absolute;
+    top: 51%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    line-height: 0;
+}

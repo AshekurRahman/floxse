@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Metadata and basic document setup -->
+    <meta charset="UTF-8"> <!-- Character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes the website responsive -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> <!-- Ensures compatibility with older versions of IE -->
+    <title>Floxse - Agency Website Template</title> <!-- Title of the document -->
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico"> <!-- Shortcut icon -->
+
+    <!-- CSS files -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/mobile.css">
+</head>
+
+<body>
+
+    <div class="page__wrapper">
+        <!-- Navbar--area -->
+        <div class="navbar__area">
+            <div class="container"> <!-- Container for page alignment -->
+                <div class="row align-items-center g-4"> <!-- Row for layout -->
+
+                    <!-- Logo column -->
+                    <div class="col-6 col-xl-3">
+                        <a href="/" class="nav__logo">
+                            <img src="./assets/images/logo-light.svg" class="logo__light" alt="Floxse">
+                            <!-- Logo image -->
+                            <img src="./assets/images/logo-dark.svg" class="logo__dark" alt="Floxse">
+                            <!-- Logo image -->
+                        </a>
+                    </div>
+
+                    <!-- Button column -->
+                    <div class="col-6 col-xl-3 order-xl-1 text-end">
+                        <a href="/" class="button primary">
+                            Get in touch <i class="fa-light fa-arrow-up-right corner__up"></i> <!-- Button with an icon -->
+                        </a>
+                        <button class="toggle__button ms-2 d-xl-none" type="button"><i
+                                class="fa-solid fa-bars-staggered"></i></button>
+                    </div>
+
+                    <!-- Navigation menu column -->
+                    <nav class="col-12 col-xl-6 nav__menu">
+                        <ul class="nav__list"> <!-- Navigation links -->
+                            <li>
+                                <a href="/">Home</a>
+                                <span class="arrow"><i class="fa-regular fa-plus"></i></span>
+                                <ul class="sub__menu">
+                                    <li><a href="/">Home Page 1</a></li>
+                                    <li><a href="/">Home Page 2</a></li>
+                                    <li>
+                                        <a href="/">Home Page 3</a>
+                                        <span class="arrow"><i class="fa-regular fa-plus"></i></span>
+                                        <ul class="sub__menu">
+                                            <li><a href="/">Home Page 1</a></li>
+                                            <li><a href="/">Home Page 2</a></li>
+                                            <li><a href="/">Home Page 3</a></li>
+                                            <li><a href="/">Home Page 4</a></li>
+                                            <li><a href="/">Home Page 5</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="/">Home Page 4</a></li>
+                                    <li><a href="/">Home Page 5</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/">About</a></li>
+                            <li><a href="/">Services</a></li>
+                            <li><a href="/">Pricing</a></li>
+                            <li><a href="/">Projects</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- Header--area -->
+        <header class="header__area">
+            <div class="container">
+                <div class="row g-4 align-items-center"> <!-- Row with gap of 4 units -->
+
+                    <!-- Left column: Header content -->
+                    <div class="col-lg-6">
+
+                        <ul class="trust__line">
+                            <li>Excelent</li>
+                            <li></li>
+                            <li><img src="./assets/images/white-start.png" class="fill" alt=""></li>
+                            <li><img src="./assets/images/white-start.png" class="fill" alt=""></li>
+                            <li><img src="./assets/images/white-start.png" class="fill" alt=""></li>
+                            <li><img src="./assets/images/white-start.png" class="fill" alt=""></li>
+                            <li><img src="./assets/images/green-start.png" alt=""></li>
+                            <li> Trustpilot</li>
+                        </ul>
+
+                        <!-- Main heading -->
+                        <h1 class="heading__one mb-4 light__color">Transforming Ideas into⚡️Digital Success Stories with us ✨</h1>
+
+                        <!-- Subheading -->
+                        <div class="sub__heading mb-5 light__color__75">
+                            <p>We specialize in crafting dynamic digital solutions that propel businesses forward in the ever-evolving digital landscape. Our team of experts.</p>
+                        </div>
+
+                        <!-- Header actions: Button and client logos -->
+                        <div class="header__actions">
+                            <!-- Primary call-to-action button -->
+                            <a href="/" class="button secondary me-4">
+                                Book a demo <i class="fa-light fa-calendars right"></i> <!-- Button with an icon -->
+                            </a>
+
+                            <!-- Client logos -->
+                            <div class="clients me-3">
+                                <img src="./assets/images/client-1.png" alt="Client 1 logo"> <!-- Alt added -->
+                                <img src="./assets/images/client-2.png" alt="Client 2 logo"> <!-- Alt added -->
+                                <img src="./assets/images/client-3.png" alt="Client 3 logo"> <!-- Alt added -->
+                            </div>
+
+                            <!-- Counter display -->
+                            <div class="counter light__color__75">
+                                <span class="number">350</span> <!-- Main number -->
+                                <span class="suffix">K+</span> <!-- Number suffix -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right column: Header image -->
+                    <div class="col-lg-6">
+                        <!-- Image figure with rounded styling -->
+                        <figure class="rounded__image">
+                            <img src="./assets/images/header-image-4.png" alt="Office Agency"> <!-- Alt added -->
+                        </figure>
+                        <img src="./assets/images/element-1.png" alt="" class="element_1">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Services-area -->
+        <section class="swiper service__slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="slide__text">UI/UX strategy</div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide__text">Product design</div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide__text">Web development</div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide__text">Mobile application</div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide__text">Web application</div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide__text">SEO</div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide__text">SEA</div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide__text">Digital Marketing</div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide__text">Content Creation</div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide__text">Brand Identity</div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide__text">E-commerce Solutions</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About-area -->
+         <section class="about__area section__padding">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6">
+                        <figure class="single__image">
+                            <img src="./assets/images/about-image-3.png" alt="">
+                        </figure>
+                    </div>
+                    <div class="col-lg-6">
+                        <span class="tertiary__bg round__xxl py-1 px-3 d-inline-block black__color mb-4">About company</span>
+                        <h2 class="mb-3">About Floxse - Your Creative Design Partner</h2>
+                        <div class="left__line mb-4 pb-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum repellat, ex asperiores ipsam, blanditiis dignissimos dolore, enim consequatur doloribus tempore praesentium totam veritatis alias!</div>
+                        <a href="" class="button secondary me-3">Contact Sales  <i class="fa-light fa-envelopes right"></i></a>
+                        <a href="" class="button outline">Learn More  <i class="fa-light fa-arrow-up-right corner__up"></i></a>
+                        <div class="mb-5"></div>
+                        <div class="row g-0">
+                            <div class="col">
+                                <h3 class="mb-2"><span class="counter" data-count="100">0</span>%</h3>
+                                <div>Client Satisfaction</div>
+                            </div>
+                            <div class="col">
+                                <h3 class="mb-2"><span class="counter" data-count="99">0</span>%</h3>
+                                <div>Success Rating</div>
+                            </div>
+                            <div class="col">
+                                <h3 class="mb-2"><span class="counter" data-count="80">0</span>%</h3>
+                                <div>Projects Completed</div>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+         </section>
+        
+
+
+
+
+    </div>
+
+
+    <script src="./assets/js/jquery-min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/js/active.js"></script>
+</body>
+
+</html>
