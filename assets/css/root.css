@@ -17,19 +17,15 @@
     --primary-color-10: #F4EFFE;
     --primary-color-5: #FAF7FF;
     
-    --secondary-color: #ffd86f;
-    --secondary-color-75: #FFE293;
-    --secondary-color-50: #FFEBB7;
-    --secondary-color-25: #FFF5DB;
-    --secondary-color-10: #FFFBF0;
-    --secondary-color-5: #FFFCF5;
+    --accent-color: #ffd86f;
+    --accent-color-75: #FFE293;
+    --accent-color-50: #FFEBB7;
+    --accent-color-25: #FFF5DB;
+    --accent-color-10: #FFFBF0;
+    --accent-color-5: #FFFCF5;
 
-    --tertiary-color: #C9FF85;
-    --tertiary-color-75: #D7FFA4;
-    --tertiary-color-50: #E4FFC2;
-    --tertiary-color-25: #F9FFF2;
-    --tertiary-color-10: #F9FFF2;
-    --tertiary-color-5: #FCFFF9;
+    --success-color: #C9FF85;
+    --info-color: #7ce1ff;
 
     --black-color: #120A0B;
     --black-color-75: #4E4848;
@@ -42,7 +38,7 @@
 
     /* Gradients */
     --primary-gradient: linear-gradient(45deg, var(--primary-color) 35%, var(--primary-color-75) 100%);
-    --secondary-gradient: linear-gradient(45deg, var(--secondary-color) 35%, var(--secondary-color-75) 100%);
+    --accent-gradient: linear-gradient(45deg, var(--accent-color) 35%, var(--accent-color-75) 100%);
     --divider-gradient: linear-gradient(90deg, rgba(152, 95, 251, 0) 0%, rgba(152, 95, 251, 0.2) 50%, rgba(152, 95, 251, 0) 100%);
 
     /* Typography */

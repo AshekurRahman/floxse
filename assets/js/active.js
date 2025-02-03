@@ -14,7 +14,7 @@
         });
     });
 })(jQuery);
-var swiper = new Swiper(".service__slider", {
+var swiper = new Swiper(".skills__slider", {
     slidesPerView: 1,
     spaceBetween: 0,
     loop: true, // Enable infinite loop

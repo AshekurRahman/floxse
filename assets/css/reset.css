@@ -183,9 +183,9 @@ hr {
     position: absolute;
     left: 0px;
     top: 5px;
-    width: 2px;
+    width: 1px;
     height: calc(100% - 24px);
-    background: var(--primary-gradient);
+    background: var(--black-color-75);
     border-radius: var(--round-xxl);
     opacity: .3;
 }
@@ -212,12 +212,16 @@ hr {
     background-color: var(--primary-color);
 }
 
-.secondary__bg {
-    background-color: var(--secondary-color);
+.accent__bg {
+    background-color: var(--accent-color);
 }
 
-.tertiary__bg {
-    background-color: var(--tertiary-color);
+.success__bg {
+    background-color: var(--success-color);
+}
+
+.info__bg {
+    background-color: var(--info-color);
 }
 
 /* ============================================= */
