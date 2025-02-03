@@ -20,7 +20,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--light-color);
-    color: var(--dark-color);
+    color: var(--black-color-75);
     font-weight: var(--fw-normal);
 }
 
@@ -31,7 +31,7 @@ h4,
 h5,
 h6 {
     color: var(--black-color);
-    font-weight: var(--fw-medium);
+    font-weight: var(--fw-semibold);
 }
 
 h1,
@@ -52,10 +52,11 @@ pre {
 }
 
 h1 {
-    font-size: clamp(3rem, 5vw, 4rem);
+    font-size: clamp(3.5rem, 5vw, 4.5rem);
     /* Minimum 3rem, scales with viewport width, max 4rem */
     line-height: 1.1;
     /* 120% of the font size */
+    font-weight: var(--fw-extra-bold);
 }
 
 h2 {
@@ -183,9 +184,9 @@ hr {
     position: absolute;
     left: 0px;
     top: 5px;
-    width: 2px;
+    width: 1px;
     height: calc(100% - 24px);
-    background: var(--primary-gradient);
+    background: var(--black-color-75);
     border-radius: var(--round-xxl);
     opacity: .3;
 }
@@ -205,6 +206,12 @@ hr {
     color: var(--black-color);
 }
 
+.gradient__color {
+    background: linear-gradient(90deg, #652EDA, #AA00FF, #AA01FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
 /* ============================================= */
 /*               Background Color                */
 /* ============================================= */
@@ -212,17 +219,21 @@ hr {
     background-color: var(--primary-color);
 }
 
-.secondary__bg {
-    background-color: var(--secondary-color);
+.success__bg {
+    background-color: var(--success-color);
 }
 
-.tertiary__bg {
-    background-color: var(--tertiary-color);
+.info__bg {
+    background-color: var(--info-color);
 }
 
 /* ============================================= */
 /*                 Border Radius                 */
 /* ============================================= */
+
+.round__md {
+    border-radius: var(--round-md);
+}
 
 .round__xxl {
     border-radius: var(--round-xxl);
@@ -237,3 +248,27 @@ hr {
     padding-bottom: 120px;
 }
 
+.section__padding_top {
+    padding-top: 120px;
+}
+
+
+.section__padding_bottom {
+    padding-bottom: 120px;
+}
+
+.section__title {
+    text-align: center;
+    margin-bottom: 72px;
+}
+
+.section__title .capsol {
+    background-color: var(--primary-color-10);
+    display: inline-block;
+    padding: 7px 20px;
+    color: var(--primary-color);
+    border-radius: var(--round-sm);
+    font-size: calc(var(--font-size-base) - 2px);
+    border: 1px solid var(--primary-color-25);
+    margin-bottom: var(--spacing-xl);
+}

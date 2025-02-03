@@ -14,8 +14,11 @@
         });
     });
 })(jQuery);
-var swiper = new Swiper(".service__slider", {
-    slidesPerView: 1,
+
+
+
+var swiper = new Swiper(".partners__slider", {
+    slidesPerView: 3,
     spaceBetween: 0,
     loop: true, // Enable infinite loop
     autoplay: {
@@ -28,13 +31,13 @@ var swiper = new Swiper(".service__slider", {
     draggable: false, // Disable dragging on desktop
     breakpoints: {
         640: {
-            slidesPerView: 2,
+            slidesPerView: 3,
         },
         768: {
             slidesPerView: 4,
         },
         1024: {
-            slidesPerView: 5,
+            slidesPerView: 6,
         },
     },
 });

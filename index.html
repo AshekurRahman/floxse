@@ -22,194 +22,238 @@
         <!-- Navbar--area -->
         <div class="navbar__area">
             <div class="container"> <!-- Container for page alignment -->
-                <div class="row align-items-center g-4"> <!-- Row for layout -->
+                <div class="navbar__row">
 
-                    <!-- Logo column -->
-                    <div class="col-6 col-xl-3">
-                        <a href="/" class="nav__logo">
-                            <img src="./assets/images/logo-light.svg" class="logo__light" alt="Floxse">
-                            <!-- Logo image -->
-                            <img src="./assets/images/logo-dark.svg" class="logo__dark" alt="Floxse">
-                            <!-- Logo image -->
-                        </a>
+                    <div class="row align-items-center g-0"> <!-- Row for layout -->
+
+                        <!-- Logo column -->
+                        <div class="col-6 col-xl-3">
+                            <a href="/" class="nav__logo">
+                                <img src="./assets/images/logo-dark.png" alt="Floxse">
+                            </a>
+                        </div>
+
+                        <!-- Button column -->
+                        <div class="col-6 col-xl-3 order-xl-1 text-end">
+                            <a href="/" class="button">
+                                Sign Up
+                            </a>
+                            <button class="toggle__button ms-2 d-xl-none" type="button"><i
+                                    class="fa-solid fa-bars-staggered"></i></button>
+                        </div>
+
+                        <!-- Navigation menu column -->
+                        <nav class="col-12 col-xl-6 nav__menu">
+                            <ul class="nav__list"> <!-- Navigation links -->
+                                <li>
+                                    <a href="/">Home</a>
+                                    <span class="arrow"><i class="fa-regular fa-plus"></i></span>
+                                    <ul class="sub__menu">
+                                        <li><a href="/">Home Page 1</a></li>
+                                        <li><a href="/">Home Page 2</a></li>
+                                        <li>
+                                            <a href="/">Home Page 3</a>
+                                            <span class="arrow"><i class="fa-regular fa-plus"></i></span>
+                                            <ul class="sub__menu">
+                                                <li><a href="/">Home Page 1</a></li>
+                                                <li><a href="/">Home Page 2</a></li>
+                                                <li><a href="/">Home Page 3</a></li>
+                                                <li><a href="/">Home Page 4</a></li>
+                                                <li><a href="/">Home Page 5</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="/">Home Page 4</a></li>
+                                        <li><a href="/">Home Page 5</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="/">About</a></li>
+                                <li><a href="/">Services</a></li>
+                                <li><a href="/">Pricing</a></li>
+                                <li><a href="/">Projects</a></li>
+                            </ul>
+                        </nav>
                     </div>
-
-                    <!-- Button column -->
-                    <div class="col-6 col-xl-3 order-xl-1 text-end">
-                        <a href="/" class="button primary">
-                            Get in touch <i class="fa-light fa-arrow-up-right corner__up"></i> <!-- Button with an icon -->
-                        </a>
-                        <button class="toggle__button ms-2 d-xl-none" type="button"><i
-                                class="fa-solid fa-bars-staggered"></i></button>
-                    </div>
-
-                    <!-- Navigation menu column -->
-                    <nav class="col-12 col-xl-6 nav__menu">
-                        <ul class="nav__list"> <!-- Navigation links -->
-                            <li>
-                                <a href="/">Home</a>
-                                <span class="arrow"><i class="fa-regular fa-plus"></i></span>
-                                <ul class="sub__menu">
-                                    <li><a href="/">Home Page 1</a></li>
-                                    <li><a href="/">Home Page 2</a></li>
-                                    <li>
-                                        <a href="/">Home Page 3</a>
-                                        <span class="arrow"><i class="fa-regular fa-plus"></i></span>
-                                        <ul class="sub__menu">
-                                            <li><a href="/">Home Page 1</a></li>
-                                            <li><a href="/">Home Page 2</a></li>
-                                            <li><a href="/">Home Page 3</a></li>
-                                            <li><a href="/">Home Page 4</a></li>
-                                            <li><a href="/">Home Page 5</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="/">Home Page 4</a></li>
-                                    <li><a href="/">Home Page 5</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="/">About</a></li>
-                            <li><a href="/">Services</a></li>
-                            <li><a href="/">Pricing</a></li>
-                            <li><a href="/">Projects</a></li>
-                        </ul>
-                    </nav>
                 </div>
             </div>
         </div>
-        <!-- Header--area -->
-        <header class="header__area">
+
+
+
+        <!-- Header-Area -->
+         <header class="header__area">
             <div class="container">
-                <div class="row g-4 align-items-center"> <!-- Row with gap of 4 units -->
-
-                    <!-- Left column: Header content -->
-                    <div class="col-lg-6">
-
-                        <ul class="trust__line">
-                            <li>Excelent</li>
-                            <li></li>
-                            <li><img src="./assets/images/white-start.png" class="fill" alt=""></li>
-                            <li><img src="./assets/images/white-start.png" class="fill" alt=""></li>
-                            <li><img src="./assets/images/white-start.png" class="fill" alt=""></li>
-                            <li><img src="./assets/images/white-start.png" class="fill" alt=""></li>
-                            <li><img src="./assets/images/green-start.png" alt=""></li>
-                            <li> Trustpilot</li>
-                        </ul>
-
-                        <!-- Main heading -->
-                        <h1 class="heading__one mb-4 light__color">Transforming Ideas into⚡️Digital Success Stories with us ✨</h1>
-
-                        <!-- Subheading -->
-                        <div class="sub__heading mb-5 light__color__75">
-                            <p>We specialize in crafting dynamic digital solutions that propel businesses forward in the ever-evolving digital landscape. Our team of experts.</p>
+                <div class="row justify-content-center">
+                    <div class="col-lg-10 text-center">
+                        <h1 class="header__title">Your <span class="gradient__color">All-in-One</span> Partner for E-commerce Success</h1>
+                        <div class="header__subtitle">
+                            <p>From product sourcing to doorstep delivery, we handle it all—seamlessly and reliably.</p>
                         </div>
-
-                        <!-- Header actions: Button and client logos -->
-                        <div class="header__actions">
-                            <!-- Primary call-to-action button -->
-                            <a href="/" class="button secondary me-4">
-                                Book a demo <i class="fa-light fa-calendars right"></i> <!-- Button with an icon -->
-                            </a>
-
-                            <!-- Client logos -->
-                            <div class="clients me-3">
-                                <img src="./assets/images/client-1.png" alt="Client 1 logo"> <!-- Alt added -->
-                                <img src="./assets/images/client-2.png" alt="Client 2 logo"> <!-- Alt added -->
-                                <img src="./assets/images/client-3.png" alt="Client 3 logo"> <!-- Alt added -->
-                            </div>
-
-                            <!-- Counter display -->
-                            <div class="counter light__color__75">
-                                <span class="number">350</span> <!-- Main number -->
-                                <span class="suffix">K+</span> <!-- Number suffix -->
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Right column: Header image -->
-                    <div class="col-lg-6">
-                        <!-- Image figure with rounded styling -->
-                        <figure class="rounded__image">
-                            <img src="./assets/images/header-image-4.png" alt="Office Agency"> <!-- Alt added -->
-                        </figure>
-                        <img src="./assets/images/element-1.png" alt="" class="element_1">
+                        <a href="/" class="button primary">Free Sign up</a>
+                        <p><small>*No bullshit credit card required</small></p>
                     </div>
                 </div>
             </div>
-        </header>
-        <!-- Services-area -->
-        <section class="swiper service__slider">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="slide__text">UI/UX strategy</div>
+            <div class="header__image">
+                <img src="./assets/images/header-image.png" alt="">
+            </div>
+         </header>
+
+
+         <section class="trusted__partners section__padding_top">
+            <div class="container">
+                <div class="section__title mb-0">
+                    <h6 class="title mb-5">Trusted Partners, Consistently Delivering Excellence</h6>
                 </div>
-                <div class="swiper-slide">
-                    <div class="slide__text">Product design</div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="slide__text">Web development</div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="slide__text">Mobile application</div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="slide__text">Web application</div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="slide__text">SEO</div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="slide__text">SEA</div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="slide__text">Digital Marketing</div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="slide__text">Content Creation</div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="slide__text">Brand Identity</div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="slide__text">E-commerce Solutions</div>
+                <div class="swiper partners__slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><div class="single__image"><img src="./assets/images/partner-logo-43.png" alt="T Express"></div></div>
+                        <div class="swiper-slide"><div class="single__image"><img src="./assets/images/partner-logo-44.png" alt="Porter Express"></div></div>
+                        <div class="swiper-slide"><div class="single__image"><img src="./assets/images/partner-logo-45.png" alt="SMSA Express"></div></div>
+                        <div class="swiper-slide"><div class="single__image"><img src="./assets/images/partner-logo-46.png" alt="Mylerz"></div></div>
+                        <div class="swiper-slide"><div class="single__image"><img src="./assets/images/partner-logo-47.png" alt="iMile Delivery"></div></div>
+                        <div class="swiper-slide"><div class="single__image"><img src="./assets/images/partner-logo-48.png" alt="ASYA"></div></div>
+                        <div class="swiper-slide"><div class="single__image"><img src="./assets/images/partner-logo-43.png" alt="T Express"></div></div>
+                        <div class="swiper-slide"><div class="single__image"><img src="./assets/images/partner-logo-44.png" alt="Porter Express"></div></div>
+                        <div class="swiper-slide"><div class="single__image"><img src="./assets/images/partner-logo-45.png" alt="SMSA Express"></div></div>
+                        <div class="swiper-slide"><div class="single__image"><img src="./assets/images/partner-logo-46.png" alt="Mylerz"></div></div>
+                        <div class="swiper-slide"><div class="single__image"><img src="./assets/images/partner-logo-47.png" alt="iMile Delivery"></div></div>
+                        <div class="swiper-slide"><div class="single__image"><img src="./assets/images/partner-logo-48.png" alt="ASYA"></div></div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- About-area -->
-         <section class="about__area section__padding">
+        <!-- Hwo It Work Section -->
+         <section class="how_it_work section__padding_top">
             <div class="container">
-                <div class="row g-5 align-items-center">
-                    <div class="col-lg-6">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="section__title">
+                            <div class="capsol">How It Work</div>
+                            <h2 class="title mb-0">Optimize Operations, Save Resources, and Focus on Selling!</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-5">
+                    <div class="col-lg-4">
+                        <div class="single__work">
+                            <div class="dot"></div>
+                            <div class="number">01</div>
+                            <h5 class="title">Connect your store</h5>
+                            <p>Connect your e-commerce site with ease using preferred methods.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
                         <figure class="single__image">
-                            <img src="./assets/images/about-image-3.png" alt="">
+                            <img src="./assets/images/single-work1.png" alt="">
                         </figure>
                     </div>
-                    <div class="col-lg-6">
-                        <span class="tertiary__bg round__xxl py-1 px-3 d-inline-block black__color mb-4">About company</span>
-                        <h2 class="mb-3">About Floxse - Your Creative Design Partner</h2>
-                        <div class="left__line mb-4 pb-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum repellat, ex asperiores ipsam, blanditiis dignissimos dolore, enim consequatur doloribus tempore praesentium totam veritatis alias!</div>
-                        <a href="" class="button secondary me-3">Contact Sales  <i class="fa-light fa-envelopes right"></i></a>
-                        <a href="" class="button outline">Learn More  <i class="fa-light fa-arrow-up-right corner__up"></i></a>
-                        <div class="mb-5"></div>
-                        <div class="row g-0">
-                            <div class="col">
-                                <h3 class="mb-2"><span class="counter" data-count="100">0</span>%</h3>
-                                <div>Client Satisfaction</div>
-                            </div>
-                            <div class="col">
-                                <h3 class="mb-2"><span class="counter" data-count="99">0</span>%</h3>
-                                <div>Success Rating</div>
-                            </div>
-                            <div class="col">
-                                <h3 class="mb-2"><span class="counter" data-count="80">0</span>%</h3>
-                                <div>Projects Completed</div>
-                            </div>
-                        </div>                        
+                </div>
+                <div class="row mb-5">
+                    <div class="col-lg-4">
+                        <div class="single__work">
+                            <div class="dot"></div>
+                            <div class="number">02</div>
+                            <h5 class="title">Pick Products</h5>
+                            <p>Share your needs or explore our Winning Products Catalog.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <figure class="single__image">
+                            <img src="./assets/images/single-work2.png" alt="">
+                        </figure>
+                    </div>
+                </div>
+                <div class="row mb-5">
+                    <div class="col-lg-4">
+                        <div class="single__work">
+                            <div class="dot"></div>
+                            <div class="number">03</div>
+                            <h5 class="title">Collect profits</h5>
+                            <p>Receive your invoice weekly and collect your profits effortlessly.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <figure class="single__image">
+                            <img src="./assets/images/single-work3.png" alt="">
+                        </figure>
                     </div>
                 </div>
             </div>
          </section>
-        
+
+
+
+
+        <!-- Key Service Section -->
+        <section class="service_section section__padding">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="section__title">
+                            <div class="capsol">Key Service</div>
+                            <h2 class="title mb-0">Maximize Profits with Our Premium E-commerce Services.</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-3 row-cols-1 row-cols-lg-2 row-cols-xl-3">
+                    <div class="col">
+                        <div class="service__item">
+                            <h5 class="title">Product Sourcing</h5>
+                            <div class="info">Access a curated network of reliable suppliers to find high-quality products that fit your business niche, helping you stay ahead in a competitive market.</div>
+                            <figure class="thumb">
+                                <img src="./assets/images/service-1.png" alt="">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="service__item">
+                            <h5 class="title">Product Sourcing</h5>
+                            <div class="info">Access a curated network of reliable suppliers to find high-quality products that fit your business niche, helping you stay ahead in a competitive market.</div>
+                            <figure class="thumb">
+                                <img src="./assets/images/service-2.png" alt="">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="service__item">
+                            <h5 class="title">Product Sourcing</h5>
+                            <div class="info">Access a curated network of reliable suppliers to find high-quality products that fit your business niche, helping you stay ahead in a competitive market.</div>
+                            <figure class="thumb">
+                                <img src="./assets/images/service-3.png" alt="">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="service__item">
+                            <h5 class="title">Product Sourcing</h5>
+                            <div class="info">Access a curated network of reliable suppliers to find high-quality products that fit your business niche, helping you stay ahead in a competitive market.</div>
+                            <figure class="thumb">
+                                <img src="./assets/images/service-4.png" alt="">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="service__item">
+                            <h5 class="title">Product Sourcing</h5>
+                            <div class="info">Access a curated network of reliable suppliers to find high-quality products that fit your business niche, helping you stay ahead in a competitive market.</div>
+                            <figure class="thumb">
+                                <img src="./assets/images/service-5.png" alt="">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="service__item">
+                            <h5 class="title">Product Sourcing</h5>
+                            <div class="info">Access a curated network of reliable suppliers to find high-quality products that fit your business niche, helping you stay ahead in a competitive market.</div>
+                            <figure class="thumb">
+                                <img src="./assets/images/service-6.png" alt="">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
 
 
 
@@ -217,8 +261,9 @@
     </div>
 
 
-    <script src="./assets/js/jquery-min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src=" ./assets/js/jquery-min.js">
+    </script>
+    <script src="./assets/js/swiper-bundle-min.js"></script>
     <script src="./assets/js/active.js"></script>
 </body>
 
